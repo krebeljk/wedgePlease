@@ -11,3 +11,4 @@ checkMesh > log.checkMeshB
 collapseEdges -overwrite > log.collapseEdges
 checkMesh > log.checkMeshC
 changeDictionary -instance constant/polyMesh -dict system/changeDictionaryDict.toWedge
+runApplication createPatch -overwrite # removing patch axis
