@@ -7,7 +7,7 @@ It is a modification of the flattenMesh utility distributed with OpenFOAM.
 The supplied examples are a modification of the case that comes with the more elaborate utility [makeAxialMesh](http://openfoamwiki.net/index.php/Contrib/MakeAxialMesh).
 One supplied [example](/caseBM) uses `wedgePlease` to convert a blockMesh to an OpenFOAM axialMesh.
 The other [example](/caseBF) uses it to convert a fluentMesh.
-The supplied examples deal with the associated mesh cleanup (collapse 0-length edges, remove 0-face patchest ) which is the same as in the case of `makeAxialMesh`.
+The supplied examples deal with the associated mesh cleanup (collapse 0-length edges, remove 0-face patches) which is the same as in the case of `makeAxialMesh`.
 
 See the official website [openfoam.org](https://openfoam.org/), unofficial wiki
 [openfoamwiki.net](https://openfoamwiki.net/index.php/Main_Page) and the community forum
