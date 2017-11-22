@@ -1,10 +1,13 @@
 # wedgePlease
 
-This is an OpenFOAM-3.0.1 utility for converting a 2D mesh to axisymmetric.
+![wedgePlease](wedgePlease.png)
+
+This is a very simple OpenFOAM-3.0.1 utility for converting a 2D mesh to axisymmetric.
 It is a modification of the flattenMesh utility distributed with OpenFOAM.
-The cases are a modification of the more elaborate utility [makeAxialMesh](http://openfoamwiki.net/index.php/Contrib/MakeAxialMesh).
-One case uses the wedgePlease to convert a blockMesh to an OpenFOAM axialMesh.
-One case uses it to convert a fluentMesh.
+The supplied examples are a modification of the case that comes with the more elaborate utility [makeAxialMesh](http://openfoamwiki.net/index.php/Contrib/MakeAxialMesh).
+One supplied [example](/caseBM) uses `wedgePlease` to convert a blockMesh to an OpenFOAM axialMesh.
+The other [example](/caseBF) uses it to convert a fluentMesh.
+The supplied examples deal with the associated mesh cleanup (collapse 0-length edges, remove 0-face patchest ) which is the same as in the case of `makeAxialMesh`.
 
 See the official website [openfoam.org](https://openfoam.org/), unofficial wiki
 [openfoamwiki.net](https://openfoamwiki.net/index.php/Main_Page) and the community forum
@@ -22,7 +25,7 @@ Run `Allmesh` in the [`caseBM`](/caseBM) or [`caseFM`](/caseFM) directory to con
 
 * Assumes a 2D mesh in the XY plane.
 * The Y axis becomes the axis of symmetry.
-* The command `wedgePlease -angle 5` only reshapes the points to form the wedge.
+* The command `wedgePlease -angle 5` reshapes the mesh points to form the wedge.
 
 ## Feedback
 
@@ -39,7 +42,3 @@ This project is licensed under the GPU License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * The work was supported by the [Laboratory for Numerical Modelling and Simulation - LNMS](http://lab.fs.uni-lj.si/lnms/).
-
-## Demo case
-![Demo geometry](/tutorials/demo/demo_geom.png)
-![Pressure evolution](/tutorials/demo/plot.png)
