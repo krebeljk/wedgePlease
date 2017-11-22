@@ -4,7 +4,7 @@ cd ${0%/*} || exit 1    # run from this directory
 # Source tutorial clean functions
 . $WM_PROJECT_DIR/bin/tools/CleanFunctions
 
-blockMesh > log.blockMesh
+fluentMeshToFoam -scale 1e-3 fim_01_00_msh_C_01_01.fluentMesh > log.fluentMeshToFoam
 checkMesh > log.checkMeshA
 wedgePlease -angle 5 > log.wedgePlease
 checkMesh > log.checkMeshB
