@@ -8,8 +8,8 @@ fluentMeshToFoam -scale 1e-3 fim_01_00_msh_C_01_01.fluentMesh > log.fluentMeshTo
 checkMesh > log.checkMeshA
 wedgePlease -angle 5 > log.wedgePlease
 checkMesh > log.checkMeshB
-collapseEdges -overwrite > log.collapseEdges
+collapseEdges -overwrite > log.collapseEdges # remove the 0 length edges on the axis patch
 checkMesh > log.checkMeshC
-changeDictionary -instance constant/polyMesh -dict system/changeDictionaryDict.toWedge
-createPatch -overwrite > log.createPatch  # removing patch axis
+changeDictionary -instance constant/polyMesh -dict system/changeDictionaryDict.toWedge # type wedge boundary condition
+createPatch -overwrite > log.createPatch  # removing patch axis which contains no faces
 checkMesh > log.checkMeshD
