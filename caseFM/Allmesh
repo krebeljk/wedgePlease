@@ -1,0 +1,15 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Source tutorial clean functions
+. $WM_PROJECT_DIR/bin/tools/CleanFunctions
+
+fluentMeshToFoam -scale 1e-3 fim_01_00_msh_C_01_01.fluentMesh > log.fluentMeshToFoam
+checkMesh > log.checkMeshA
+wedgePlease -angle 5 > log.wedgePlease
+checkMesh > log.checkMeshB
+collapseEdges -overwrite > log.collapseEdges # remove the 0 length edges on the axis patch
+checkMesh > log.checkMeshC
+changeDictionary -instance constant/polyMesh -dict system/changeDictionaryDict.toWedge # type wedge boundary condition
+createPatch -overwrite > log.createPatch  # removing patch axis which contains no faces
+checkMesh > log.checkMeshD
