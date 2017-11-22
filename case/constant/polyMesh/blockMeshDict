@@ -53,7 +53,7 @@ boundary
         type patch;
         faces
         (
-            (3 7 6 2)
+            (0 4 7 3)
         );
     }
     wedge_pos
@@ -78,7 +78,7 @@ boundary
         type patch;
         faces
         (
-            (0 4 7 3)
+            (3 7 6 2)
             (2 6 5 1)
             (1 5 4 0)
         );

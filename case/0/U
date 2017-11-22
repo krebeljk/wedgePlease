@@ -29,29 +29,19 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {
-    movingWall      
-    {
-        type            fixedValue;
-        value           uniform (0 0 0.5);
-    }
 
-    fixedWalls      
+    walls
     {
         type            fixedValue;
         value           uniform (0 0 0);
     }
 
-    frontAndBack    
-    {
-        type            empty;
-    }
-
-    frontAndBack_pos
+    wedge_pos
     {
         type            wedge;
     }
 
-    frontAndBack_neg
+    wedge_neg
     {
         type            wedge;
     }
