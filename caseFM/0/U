@@ -30,6 +30,18 @@ internalField   uniform (0 0 0);
 boundaryField
 {
 
+    inlet
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+
+    outlet
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+
     walls
     {
         type            fixedValue;

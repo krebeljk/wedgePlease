@@ -29,6 +29,16 @@ internalField   uniform 0;
 
 boundaryField
 {
+    inlet
+    {
+        type            zeroGradient;
+    }
+
+    outlet
+    {
+        type            zeroGradient;
+    }
+
     walls
     {
         type            zeroGradient;
