@@ -1,6 +1,6 @@
 # wedgePlease
 
-![wedgePlease](wedgePlease.png)
+![wedgePlease](wedgePlease.PNG)
 
 This is a very simple OpenFOAM-3.0.1 utility for converting a 2D mesh to axisymmetric.
 It is a modification of the flattenMesh utility distributed with OpenFOAM.
