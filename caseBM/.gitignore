@@ -19,4 +19,5 @@ constant/polyMesh/*
 *stdout.txt
 *.png
 nohup.out
+0/pointPriority
 # end-of-file
