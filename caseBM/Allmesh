@@ -5,12 +5,12 @@ cd ${0%/*} || exit 1    # run from this directory
 . $WM_PROJECT_DIR/bin/tools/CleanFunctions
 
 blockMesh > log.blockMesh
-checkMesh > log.checkMeshA
+# checkMesh > log.checkMeshA
 wedgePlease -angle 5 > log.wedgePlease
-checkMesh > log.checkMeshB
+# checkMesh > log.checkMeshB # bad
 collapseEdges -overwrite > log.collapseEdges
-checkMesh > log.checkMeshC
+# checkMesh > log.checkMeshC
 foamDictionary constant/polyMesh/boundary -entry entry0.wedge_pos.type -set wedge
 foamDictionary constant/polyMesh/boundary -entry entry0.wedge_neg.type -set wedge
 createPatch -overwrite > log.createPatch  # removing patch axis
-checkMesh > log.checkMeshD
+# checkMesh > log.checkMeshD
