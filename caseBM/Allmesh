@@ -10,6 +10,7 @@ wedgePlease -angle 5 > log.wedgePlease
 checkMesh > log.checkMeshB
 collapseEdges -overwrite > log.collapseEdges
 checkMesh > log.checkMeshC
-changeDictionary -instance constant/polyMesh -dict system/changeDictionaryDict.toWedge
+foamDictionary constant/polyMesh/boundary -entry entry0.wedge_pos.type -set wedge
+foamDictionary constant/polyMesh/boundary -entry entry0.wedge_neg.type -set wedge
 createPatch -overwrite > log.createPatch  # removing patch axis
 checkMesh > log.checkMeshD
