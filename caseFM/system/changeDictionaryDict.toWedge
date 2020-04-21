@@ -14,18 +14,15 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dictionaryReplacement
+boundary
 {
-    boundary
+    wedge_pos
     {
-        wedge_pos
-        {
-            type            wedge;
-        }
-        wedge_neg
-        {
-            type            wedge;
-        }
+        type            wedge;
+    }
+    wedge_neg
+    {
+        type            wedge;
     }
 }
 // ************************************************************************* //
