@@ -9,4 +9,3 @@ rm log.*
 rm *.png
 rm nohup.out
 cleanCase
-foamClearPolyMesh
