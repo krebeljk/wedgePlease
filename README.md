@@ -9,7 +9,7 @@ One supplied [example](/caseBM) uses `wedgePlease` to convert a blockMesh to an 
 The other [example](/caseBF) uses it to convert a fluentMesh.
 The supplied examples deal with the associated mesh cleanup (collapse 0-length edges, remove 0-face patches) which is the same as in the case of `makeAxialMesh`.
 
-Last changest were made using OpenFOAM v7.0.
+Last changes were made using OpenFOAM v7.0.
 
 This software is not part of OpenFOAM.
 See the OpenFOAM website [openfoam.org](https://openfoam.org/), unofficial wiki
@@ -18,7 +18,7 @@ See the OpenFOAM website [openfoam.org](https://openfoam.org/), unofficial wiki
 
 ## Getting Started
 
-An OpenFOAM installation is required to run the code. This code was run on Centos 6.6 (Rocks 6.2 Sidewinder).
+An OpenFOAM installation is required to run the code.
 
 Run `Allwmake` in the utility directory to compile it.
 
